@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Boeken | Marjet Bremer — Phyllon Connectedwork</title>
+  <meta name="description" content="Plan een vrijblijvende kennismaking met Marjet Bremer. Direct bereikbaar via 06-40745772 of info@phyllonconnectedwork.nl.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      font-family: var(--font-body);
+      font-size: 0.97rem;
+      color: var(--text);
+      background: var(--white);
+      transition: var(--transition);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--green-mid);
+      box-shadow: 0 0 0 3px rgba(46,168,124,0.12);
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+    .form-submit { width: 100%; justify-content: center; padding: 14px; font-size: 1rem; }
+    .form-note {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.svg" alt="Phyllon Connectedwork">
+      </a>
+      <button class="nav-toggle" aria-label="Menu openen" onclick="document.querySelector('.nav-links').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over mij</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="producten.html">Producten</a></li>
+        <li><a href="contact.html" class="active btn btn-sm">Boek een gesprek</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow" style="color:rgba(255,255,255,0.7)">Contact</span>
+      <h1>Neem contact op</h1>
+      <p>Vrijblijvend kennismaken of direct een vraag stellen? Ik reageer altijd binnen 1–2 werkdagen.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- CONTACTINFO -->
+        <div class="contact-info">
+          <span class="eyebrow">Direct bereikbaar</span>
+          <h3>Marjet Bremer</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <strong>Telefoon</strong>
+              <a href="tel:+31640745772">06-40745772</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <strong>E-mail</strong>
+              <a href="mailto:info@phyllonconnectedwork.nl">info@phyllonconnectedwork.nl</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🌍</div>
+            <div class="contact-detail-text">
+              <strong>Locatie</strong>
+              <a>Online & op locatie door heel Nederland</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🕐</div>
+            <div class="contact-detail-text">
+              <strong>Reactietijd</strong>
+              <a>Binnen 1–2 werkdagen</a>
+            </div>
+          </div>
+
+          <div style="margin-top:32px; padding:24px; background:var(--off-white); border-radius:var(--radius-lg); border:1px solid var(--border);">
+            <strong style="color:var(--navy); display:block; margin-bottom:8px">Bedrijfsgegevens</strong>
+            <p style="font-size:0.88rem; line-height:2;">
+              Phyllon Connectedwork<br>
+              KvK 82726098<br>
+              SKJ 110010802<br>
+              CRKBO-geregistreerd<br>
+              Alle tarieven BTW-vrij
+            </p>
+          </div>
+
+          <div style="margin-top:24px; padding:20px; background:var(--green-pale); border-radius:var(--radius); border-left:4px solid var(--green-mid);">
+            <strong style="color:var(--green); font-size:0.9rem;">Let op:</strong>
+            <p style="font-size:0.88rem; margin-top:4px;">Ik neem een beperkt aantal trajecten per periode aan. Neem tijdig contact op om beschikbaarheid te bespreken.</p>
+          </div>
+        </div>
+
+        <!-- FORMULIER -->
+        <div>
+          <div class="booking-box">
+            <span class="eyebrow">Kennismaking inplannen</span>
+            <h3>Stuur een bericht</h3>
+            <p>Vertel kort wat je zoekt — dan plannen we een gesprek in om te kijken hoe ik kan helpen.</p>
+
+            <!--
+              TIP: Koppel dit formulier aan Formspree (gratis) of een andere form-handler.
+              Stap: ga naar formspree.io, maak een formulier aan en vervang de action URL hieronder.
+            -->
+            <form action="https://formspree.io/f/JOUW_FORMSPREE_ID" method="POST" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="naam">Naam *</label>
+                  <input type="text" id="naam" name="naam" required placeholder="Jouw naam">
+                </div>
+                <div class="form-group">
+                  <label for="organisatie">Organisatie</label>
+                  <input type="text" id="organisatie" name="organisatie" placeholder="Optioneel">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">E-mail *</label>
+                  <input type="email" id="email" name="email" required placeholder="jouw@email.nl">
+                </div>
+                <div class="form-group">
+                  <label for="telefoon">Telefoon</label>
+                  <input type="tel" id="telefoon" name="telefoon" placeholder="06-12345678">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="onderwerp">Wat zoek je? *</label>
+                <select id="onderwerp" name="onderwerp" required>
+                  <option value="">— Maak een keuze —</option>
+                  <option value="kindbehartiging">Kindbehartiging</option>
+                  <option value="moreel-beraad">Moreel beraad & integriteit</option>
+                  <option value="kwaliteitsscan">Kwaliteitsscan organisatie</option>
+                  <option value="training">Training & coaching</option>
+                  <option value="retainer">Retainer / strippenkaart</option>
+                  <option value="product">Digitaal product / tool</option>
+                  <option value="anders">Anders / kennismaking</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="bericht">Bericht *</label>
+                <textarea id="bericht" name="bericht" required placeholder="Vertel kort wat je zoekt of wat de situatie is..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Verstuur bericht</button>
+              <p class="form-note">Of bel direct: <a href="tel:+31640745772" style="color:var(--green)">06-40745772</a></p>
+            </form>
+          </div>
+
+          <!-- CAL.COM PLACEHOLDER -->
+          <div style="margin-top:28px; background:var(--off-white); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; text-align:center;">
+            <span class="eyebrow">Online inplannen</span>
+            <h3 style="margin-bottom:12px;">Agenda inplannen via Cal.com</h3>
+            <p style="margin-bottom:20px;">Liever zelf een moment kiezen? Via Cal.com kun je direct een tijdslot reserveren.</p>
+            <!--
+              TIP: Vervang de link hieronder door jouw eigen Cal.com link.
+              Maak een gratis account op cal.com en kopieer jouw boekingslink.
+            -->
+            <a href="https://cal.com/JOUW_CALCOM_NAAM" target="_blank" class="btn btn-outline">
+              📅 Open mijn agenda
+            </a>
+            <p style="font-size:0.8rem; color:var(--text-muted); margin-top:12px;">Opens in een nieuw venster</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="logo.svg" alt="Phyllon Connectedwork">
+        <p>Marjet Bremer<br>06-40745772<br>info@phyllonconnectedwork.nl</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="over.html">Over mij</a>
+        <a href="diensten.html">Diensten</a>
+        <a href="producten.html">Producten</a>
+        <a href="contact.html">Contact & boeken</a>
+      </div>
+      <div class="footer-info">
+        <p>KvK 82726098<br>SKJ 110010802<br>CRKBO-geregistreerd</p>
+        <p style="margin-top:12px">Alle tarieven zijn BTW-vrij</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Phyllon Connectedwork · Marjet Bremer · Ethiek · Behartiging · Verbinding</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Eenvoudige form-feedback
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      const btn = this.querySelector('button[type=submit]');
+      btn.textContent = 'Wordt verstuurd...';
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>

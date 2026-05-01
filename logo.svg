@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A6B5A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D4A7A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2EA87C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A6B9A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: Shield with leaf/branch -->
+  <!-- Shield base -->
+  <path d="M80 18 L28 40 L28 90 Q28 128 80 148 Q132 128 132 90 L132 40 Z"
+        fill="url(#leafGrad)" />
+
+  <!-- Inner shield highlight -->
+  <path d="M80 26 L36 44 L36 90 Q36 122 80 140 Q124 122 124 90 L124 44 Z"
+        fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+
+  <!-- Leaf/branch symbol inside shield -->
+  <!-- Main stem -->
+  <path d="M80 120 L80 60" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Left leaves -->
+  <path d="M80 95 Q58 82 52 65 Q70 68 80 83" fill="rgba(255,255,255,0.85)" />
+  <path d="M80 75 Q62 64 60 50 Q74 55 80 68" fill="rgba(255,255,255,0.65)" />
+
+  <!-- Right leaves -->
+  <path d="M80 90 Q100 76 108 60 Q90 63 80 78" fill="rgba(255,255,255,0.75)" />
+  <path d="M80 108 Q98 98 104 84 Q88 85 80 98" fill="rgba(255,255,255,0.55)" />
+
+  <!-- Text group -->
+  <!-- PHYLLON -->
+  <text x="155" y="72"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="44"
+        font-weight="700"
+        letter-spacing="3"
+        fill="#0D4A7A">PHYLLON</text>
+
+  <!-- Thin divider line -->
+  <line x1="155" y1="84" x2="490" y2="84" stroke="#2EA87C" stroke-width="1.5"/>
+
+  <!-- CONNECTEDWORK -->
+  <text x="157" y="108"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="19"
+        font-weight="400"
+        letter-spacing="5.5"
+        fill="#1A6B5A">CONNECTEDWORK</text>
+
+  <!-- Tagline -->
+  <text x="158" y="132"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11"
+        font-weight="300"
+        letter-spacing="2"
+        fill="#5A8BA0"
+        font-style="italic">Ethiek  ·  Behartiging  ·  Verbinding</text>
+</svg>

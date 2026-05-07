@@ -714,17 +714,23 @@ p  { color: var(--text-muted); }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
-  .hero-inner        { grid-template-columns: 1fr; }
-  .hero-image        { display: flex; justify-content: center; margin-top: 32px; }
-  .hero-image img    { max-width: 260px; aspect-ratio: 3/4; }
+  .hero-inner        { grid-template-columns: 1fr !important; gap: 24px; }
+  .hero-image        { display: flex; justify-content: center; margin-top: 8px; }
+  .hero-image img    { max-width: 240px; aspect-ratio: 3/4; }
+  .hero-sub          { max-width: 100%; }
   .two-col           { grid-template-columns: 1fr; }
   .service-inner     { grid-template-columns: 1fr; }
   .service-inner.reverse { direction: ltr; }
+  .retainer-grid     { grid-template-columns: 1fr; }
   .contact-grid      { grid-template-columns: 1fr; }
   .about-grid        { grid-template-columns: 1fr; }
   .about-photo       { position: static; }
   .footer-inner      { grid-template-columns: 1fr; }
   .about-values      { grid-template-columns: 1fr; }
+  /* Fix inline grid styles in Moreel Beraad PRO and other sections */
+  [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+  /* Prevent any element from being wider than viewport */
+  * { max-width: 100%; box-sizing: border-box; }
 }
 
 @media (max-width: 700px) {
